@@ -1,0 +1,18 @@
+<html>
+<body>
+<h1>Setter method</h1>
+<p id="demo"></p>
+<script>
+const person={
+firstName:"Raihan",
+lastName:"Shariff",
+language:"",
+set lang(value){
+this.language=value;
+}
+};
+person.lang="English";
+document.getElementById("demo").innerHTML=person.language;
+</script>
+</body>
+</html>
