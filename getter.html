@@ -1,18 +1,17 @@
 <html>
 <body>
-<h1>Setter Method</h1>
+<h1>Getter Method</h1>
 <p id="demo"></p>
 <script>
 const person={
-firstName:"Raihan",
-lastName:"Shariff",
-language:"",
-set lang(value){
-this.language=value;
+firstName: "Raihan",
+lastName: "Shariff",
+language: "English",
+get lang(){
+return this.language;
 }
 };
-person.lang="English";
-document.getElementById("demo").innerHTML=person.language;
+document.getElementById("demo").innerHTML=person.lang;
 </script>
 </body>
 </html>
